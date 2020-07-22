@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "brands",
+  "collectionName": "brews",
   "info": {
-    "name": "Brand"
+    "name": "Brews"
   },
   "options": {
     "increments": true,
@@ -15,7 +15,14 @@
     "description": {
       "type": "richtext"
     },
-    "image": {
+    "price": {
+      "type": "decimal"
+    },
+    "brand": {
+      "model": "brand",
+      "via": "brews"
+    },
+    "imaage": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -25,10 +32,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "brews": {
-      "via": "brand",
-      "collection": "brews"
     }
   }
 }
