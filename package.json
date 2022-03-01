@@ -12,7 +12,7 @@
   "devDependencies": {},
   "dependencies": {
     "heroku": "^7.42.4",
-    "strapi": "3.0.6",
+    "strapi": "3.6.8",
     "strapi-admin": "3.0.6",
     "strapi-connector-mongoose": "3.0.6",
     "strapi-plugin-content-manager": "3.0.6",
